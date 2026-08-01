@@ -1519,7 +1519,7 @@ img {
 .slider {
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .slide {
@@ -2500,4 +2500,26 @@ footer p {
         transition-duration: 0.01ms !important;
     }
 
+}
+
+@media (max-width: 768px) {
+
+    .project-image {
+        height: 170px;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* instead of cover */
+        background: #fff;
+    }
+
+
+
+    .prev,
+    .next {
+        font-size: 18px;
+        padding: 8px;
+    }
 }
